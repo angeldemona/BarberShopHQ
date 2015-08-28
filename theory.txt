@@ -1,6 +1,26 @@
  b = Barber.new :name => 'roman'
  b.save
+ b.new_record?
  
  select * from table
 
  db:create
+
+
+set :databese, ""
+
+class 
+
+end
+
+rake db:create_migration
+  <div class="form-group">
+    <label>Ваш парикмахер:</label>
+    <select name="barber" class="form-control">
+    
+      <% @barbers.each do |item| %>
+        <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option>
+      <% end %>
+
+    </select>
+  </div>

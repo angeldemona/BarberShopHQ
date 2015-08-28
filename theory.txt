@@ -1,0 +1,6 @@
+ b = Barber.new :name => 'roman'
+ b.save
+ 
+ select * from table
+
+ db:create
